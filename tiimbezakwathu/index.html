@@ -1,17 +1,439 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Login Form</title>
-</head>
-<body>
-    <form action="process_login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Login">
-    </form>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>tiimbezakwathu</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- owl carousel style -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-dark bg-dark">
+               <a class="image_1" href="index.html"><img src="images/tiimbezakwathu.jpg" height="50" width="50"></a>
+               <div class="search_section">
+                  <ul>
+                     <li><a href="#">Log In</a></li>
+                     <li><a href="#"><img src="images/logo_1.png" height="25" width="25"></a></li>
+                     <li><a href="#"><img src="images/search-icon.png"></a></li>
+                  </ul>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarsExample01">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="tiimbezakwathu.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="category.html">Category</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Client</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!--banner section start -->
+         <div class="banner_section layout_padding">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital"><span class="font_size_90">Free</span> music downloads</h4>
+                                 <p class="banner_text">There are many variations of music of your choice; Gospel, Local, Dancehall, R&B, Regea and so ever.</p>
+                                 <div class="book_bt"><a href="#">Download Now!!</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/tiimbezakwathu.jpg" height="639" width="414" class="image_1"></div>
+                           </div>
+                        </div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter music tittle" name=""><button class="search_text">Search</button></div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital"><span class="font_size_90">Free</span> Video downloads</h4>
+                                 <p class="banner_text">There are many variations of music of your choice; Gospel, Local, Dancehall, R&B, Regea and so ever. </p>
+                                 <div class="book_bt"><a href="#">Download Now!</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/tiimbezakwathu.jpg" height="639" width="414"class="image_1"></div>
+                           </div>
+                        </div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter music tittle" name=""><button class="search_text">Search</button></div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="taital_main">
+                                 <h4 class="banner_taital"><span class="font_size_90">Free</span> Audio downloads</h4>
+                                 <p class="banner_text">There are many variations of music of your choice; Gospel, Local, Dancehall, R&B, Regea and so ever. </p>
+                                 <div class="book_bt"><a href="#">Download Now</a></div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div><img src="images/tiimbezakwathu.jpg" height="639" width="414" class="image_1"></div>
+                           </div>
+                        </div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter music tittle" name=""><button class="search_text">Search</button></div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+               <i class=""><img src="images/left-icon.png"></i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+               <i class=""><img src="images/right-icon.png"></i>
+               </a>
+            </div>
+         </div>
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!--category section start -->
+      <div class="container">
+         <div class="category_section">
+            <div class="row">
+               <div class="col-lg-2 col-sm-12">
+                  <h1 class="category_text">Category</h1>
+               </div>
+               <div class="col-lg-10 col-sm-12 main">
+                  <div class="col">
+                     <div class="box_main">
+                        <div><img src="images/logo_5.png" class="icon_1"></div>
+                        <h4 class="fashion_text active">Dancehall</h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div> <img src="images/logo_4.png" class="icon_2"></div>
+                        <h4 class="fashion_text">Hip-hop</h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><img src="images/logo_3.png" class="icon_3"></div>
+                        <h4 class="fashion_text">Regea</h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><img src="images/logo_2.png" class="icon_4"></div>
+                        <h4 class="fashion_text">Secular</h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><img src="images/logo_1.png" class="icon_5"></div>
+                        <h4 class="fashion_text">R&B</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="category_section_2">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section active">
+                     <h1 class="bed_text">AMEN by Makoloma</h1>
+                        <div><img src="images/logo_7.png" class="image_2" id="artwork"alt="Artwork"   ></div>
+                           <audio controls onplay="updatePlayCount()">
+                           <source src="music/Josephy Makoloma - Amen (Prod by Mponya)-1.mp3" type="audio/mpeg">
+                           </audio>
+                           <a href="music/Josephy Makoloma - Amen (Prod by Mponya)-1.mp3" 
+                           download onclick="showFileSize()"onclick="updateViewCount()"download="music/Josephy Makoloma - Amen (Prod by Mponya)-1.mp3" 
+                           class="download-button">
+                           DOWNLOAD
+                           </a>
+                           <p>Downloads:<span id="downloadCount">0   </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Views: <span id="viewCount">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plays: <span id="playCount">0</span></p>
+                           <p>File Size: <span id="fileSize"></span></p>
+                           <div class="seemore_bt"><a href="#">see More</a>
+                        </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section">
+                     <h1 class="bed_text">DRIEMO POPO</h1>
+
+
+                        <div><img src="images/logo_1.png" class="image_2" id="artwork"alt="Artwork"   ></div>
+                           <audio controls onplay="updatePlayCount()">
+                              <source src="music/Driemo - POPO (NyasaVibes.Com).mp3" type="audio/mpeg">
+                           </audio>
+                           <a href="music/Driemo - POPO (NyasaVibes.Com).mp3" 
+                               download onclick="showFileSize()"onclick="updateViewCount()"download="music/Driemo - POPO (NyasaVibes.Com).mp3" 
+                                  class="download-button">
+                                  DOWNLOAD
+                           </a>
+                        <p>Downloads:<span id="downloadCount">0   </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Views: <span id="viewCount">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plays: <span id="playCount">0</span></p>
+                     <p>File Size: <span id="fileSize"></span></p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section">
+                     <h1 class="bed_text">YOMWEYO!!</h1>
+
+                        
+                        <div><img src="images/logo_2.png" class="image_2" id="artwork"alt="Artwork"   ></div>
+                        <audio controls onplay="updatePlayCount()">
+                        <source src="music/Yomweyo feat Big Xhosa x Zeze Kingston x Henwood -Janta_ www.tiimbezakwathu.com.mp3" type="audio/mpeg">
+                    </audio>
+                    <a href="music/Yomweyo feat Big Xhosa x Zeze Kingston x Henwood -Janta_ www.tiimbezakwathu.com.mp3" 
+                    download onclick="showFileSize()"onclick="updateViewCount()"download="music/Yomweyo feat Big Xhosa x Zeze Kingston x Henwood -Janta_ www.tiimbezakwathu.com.mp3" 
+                    class="download-button">
+                     DOWNLOAD
+                     </a>
+                     
+
+                 <p>Downloads:<span id="downloadCount">0   </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Views: <span id="viewCount">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plays: <span id="playCount">0</span></p>
+                 <p>File Size: <span id="fileSize"></span></p>
+                                       <!-- Optional: Button to reset the play count
+                 <button onclick="resetPlayCount()">Reset Play Count</button>
+                                        
+                    
+                     <div class="seemore_bt"><a href="#">see More</a></div>
+                                       -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- category section end -->
+      <!-- beauty product section start -->
+      <div class="beauty_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beauty_box">
+                     <h1 class="bed_text">MPOKOMPOKO by Njuchi..</h1>
+                     
+                        <div><img src="images/logo_4.png" class="image_2" id="artwork"alt="Artwork"   ></div>
+                           <audio controls onplay="updatePlayCount()">
+                              <source src="music/Ace Jizzy  - Mpoko Mpoko Remix ft Veda Njuchi x K Banton x Kellie Devine x Bee Jay x Lady Aika x Sean Morgan x Jeg.mp3" type="audio/mpeg">
+                           </audio>
+                        <a href="music/Ace Jizzy  - Mpoko Mpoko Remix ft Veda Njuchi x K Banton x Kellie Devine x Bee Jay x Lady Aika x Sean Morgan x Jeg.mp3" 
+                        download onclick="showFileSize()"onclick="updateViewCount()"download="music/Ace Jizzy  - Mpoko Mpoko Remix ft Veda Njuchi x K Banton x Kellie Devine x Bee Jay x Lady Aika x Sean Morgan x Jeg.mp3" 
+                        class="download-button">
+                        DOWNLOAD
+                        </a>
+                        <p>Downloads:<span id="downloadCount">0  </span> &nbsp;&nbsp;&nbsp;Views: <span id="viewCount">0</span>&nbsp;&nbsp;&nbsp;Plays: <span id="playCount">0</span></p>
+                        <p>File Size: <span id="fileSize"></span></p>
+
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="seemore_bt"><a href="#">see More</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-sm-12">
+                  <div class="beauty_box_1">
+                     <h1 class="bed_text_1">Explore trending music</h1>
+                     <div><img src="images/logo_3.png" class="image_3"></div>
+                     <div class="seemore_bt_1"><a href="#">see More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- beauty product section end -->
+      <!-- product section start -->
+      <div class="product_section layout_padding">
+         <div class="container">
+            <h1 class="feature_taital">TZK Top 10 Premier</h1>
+            <p class="feature_text">The Best 10 popular music in Malawi you can enjoy if by streaming, viewing and downloading it</p>
+                                     
+            <div class="product_section_2">
+               <div class="row">
+                  <div class="col-sm-5">
+                     <div class="feature_box">
+                        <h1 class="readable_text">music instruments of</h1>
+                        <div><img src="images/logo_6.png" class="image_2"></div>
+                     </div>
+                     <div class="feature_box_1">
+                        <h1 class="readable_text">download audio of</h1>
+                        <div><img src="images/logo_7.png" class="image_7"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-7">
+                     <div class="feature_box_2">
+                        <h1 class="readable_text">Download Videos of</h1>
+                        <div><img src="images/logo_5.png" class="image_8"></div>
+                        <div class="seemore_bt"><a href="#">see More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- product section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="feature_taital">enjoy music dowloded from TZK</h1>
+                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
+                     <div class="client_section_2">
+                        <div class="maso"><img src="images/maso.jpg" height="99" width="99"></div>
+                        <h3 class="nolmal_text">Music for life</h3>
+                        <p class="ipsum_text">Tiimbe Za Kwathu allows the users to subscribe with us so that if there is new release our valued nations should get an alert for the new artistical ativity not to be missed. therefore we are encouraging the our viewers to to subscribe on tiimbe za kwathu for urther updates</p>
+                        <div class="image_9"><img src="images/icon-10.png"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="feature_taital">TZK the mother of heroes</h1>
+                     <p class="feature_text">Tiimbe za Kwathu welcomes artists From all the districts in Malawi and all over the world as long as inter10ment is concerned.</p>
+                     <div class="client_section_2">
+                        <div class="car"><img src="images/tiimbezakwathu.jpg" height="99" width="99"></div>
+                        <h3 class="nolmal_text">Leave no 1 behind</h3>
+                        <p class="ipsum_text">Tiimbe Za Kwathu allows the users to subscribe with us so that if there is new release our valued nations should get an alert for the new artistical ativity not to be missed. therefore we are encouraging the our viewers to to subscribe on tiimbe za kwathu for urther updates</p>
+                        <div class="image_9"><img src="images/icon-10.png"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="feature_taital">Download with TZK</h1>
+                     <p class="feature_text">Tiimbe za Kwathu accommodate you download all Malawians music and music from abroad as long as intertainment is concerned.</p>
+                     <div class="client_section_2">
+                        <div class="chair"><img src="images/chair.jpg" height="99" width="99"></div>
+                        <h3 class="nolmal_text">Tiimbe Za Kwathu for All!</h3>
+                        <p class="ipsum_text">Tiimbe Za Kwathu allows the users to subscribe with us so that if there is new release our valued nations should get an alert for the new artistical ativity not to be missed. therefore we are encouraging the our viewers to to subscribe on tiimbe za kwathu for urther updates</p>
+                                               
+                        <div class="image_9"><img src="images/icon-10.png"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class=""><img src="images/left-icon.png"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class=""><img src="images/right-icon.png"></i>
+            </a>
+         </div>
+      </div>
+      <!-- client section end -->
+      <!-- newsletter section start -->
+      <div class="newsletter_section layout_padding">
+         <div class="container">
+            <h6 class="conect_text">Connect to tiimbezakwathu</h6>
+            <h1 class="newsletter_taital">Join Our Team</h1>
+            <p class="newsletter_text">Tiimbe Za Kwathu is for everyone since each and every individual enjoys home hymms. </p>
+            <div class="input-group mb-3">
+               <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">Subscribe</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- newsletter section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12">
+                  <h4 class="information_text">Trustworthy</h4>
+                  <p class="dummy_text">We are kindly to ask for artist to work with us especially the Upcoming ones with am aim of promoting their talents across the world.Tiimbe Za Kwathu is independent website that do not work with other organisation and its prereminary vision is to promote upcoming artist. </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="information_main">
+                     <h4 class="information_text">Must to know</h4>
+                     <p class="many_text">Contrary to popular belief, TZK is best website for best music. </p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="information_main">
+                     <h4 class="information_text">Contact Us</h4>
+                     <p class="call_text"><a href="#">+265 997 345 662</a></p>
+                     <p class="call_text"><a href="#">+265 887 456 658</a></p>
+                     <p class="call_text"><a href="#">tiimbezakwathu@gmail.com</a></p>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright_section">
+               <h1 class="copyright_text">
+               Copyright 2023 All Right Reserved <a href="https://html.design"> Tiimbe Za Kwathu</a>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+      <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+   </body>
 </html>
+
